@@ -30,4 +30,23 @@ np.log()
 
 ***copy and view of the numpy array***
 name.view()
-name.
+name.copy()
+
+****shape and reshape numpy arrays***
+name.shape
+name.reshape()
+
+***iterating through numpy arrays***
+for x in name: ...
+np.nditer()
+
+***sorting numpy arrays***
+np.sort()
+
+***searching through numpy arrays***
+np.where()
+
+***filtering numpy arrays***
+x = [True, False, True...]
+filtered.append()
+filtered = ... 
