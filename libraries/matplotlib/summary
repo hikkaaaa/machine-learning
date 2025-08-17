@@ -1,0 +1,55 @@
+%matplotlib inline - magic command that renders all matplotlib plots directly 
+inside the notebook
+matplotlib - plots data by working with histograms, charting graphs and so on
+
+__________________________________
+  pandas_matplotlib_part_1.ipynb
+__________________________________
+
+***histograms***
+name[].hist()
+name[].plot(kind = 'hist')
+name[].plot.hist()
+
+***area plots***
+name[].area()
+name[].plot(kind = 'area')
+name[].plot.area()
+
+***bar charts***
+name[].bar()
+name[].plot(kind = 'bar')
+name[].plot.bar()
+
+***line charts***
+name[].line()
+name[].plot(kind = 'line')
+name[].plot.line()
+
+
+__________________________________
+  pandas_matplotlib_part_2.ipynb
+__________________________________
+
+***scatter plots
+name.plot(kind = 'scatter')
+name.plot.scatter()
+
+***box plots***
+name.plot(kind = 'box')
+name.box()
+name.plot.box()
+
+***hex bin plots***
+name.plot(kind = 'hexbin')
+name.plot.hexbin()
+
+***kde(kernel density estimation) plots***
+name.plot(kind = 'kde')
+name.plot.kde()
+
+***density plots***
+name.plot(kind = 'density')
+name.plot.density()
+
+P.S: density and kde plots are the same thing, density is just another name for kde
