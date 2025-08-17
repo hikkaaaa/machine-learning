@@ -1,0 +1,166 @@
+_____________________________
+    PANDAS_LIBRARY.IPYNB
+_____________________________
+
+***import pandas as pd*** - work with DataFrames
+
+***pandas series*** (printing specific value, labeling, creating them with dictionary)
+pd.Series()
+
+***creting a DataFrame***
+pd.DataFrame()
+
+***importing CSV file***
+pd.read_csv()
+
+***pulling out the first 5 rows of the DF***
+name.head()
+
+***pulling out a specific row***
+name.loc[]
+
+***pulling out multiple rows***
+name.loc[[]]
+
+***grab the first whatever number of rows***
+name.head()
+
+***grab the last 5 rows***
+name.tail()
+
+***grab the last whatever number of rows***
+name.tail()
+
+      &&& ***getting info about the DF***
+      name.info()
+
+***getting shape of the DF***
+name.shape
+
+***getting the number of dimensions***
+name.ndim
+
+***getting the datatypes of columns***
+name.dtypes
+
+       &&& ***get some statistics about the data***
+       name.describe()
+       name[].describe()
+
+***getting specific column***
+name[]
+name.
+name.iloc[:, ]
+
+***counting data from the DF*** (how many of each element are there in
+ascending and descending order, counting NaN too, getting relative frequency, 
+specific item count)
+name[].value_counts()
+
+***counting unique values***
+name.groupby().size()
+name.groupby().count()
+
+***selecting particular column by the datatype and computing them***
+name.select_dtypes().apply()
+
+***adding new columns to the DF*** (adding already known values as a list,
+adding default values, adding NaN values)
+name[] = listname
+name.insert()
+name.assign()
+
+***removing columns and rows***
+name.drop()
+
+***grabbing rows, points, and subsets from the DF***
+name.loc[]
+name.iloc[]
+
+***conditional selections*** - how you filter rows based on sertain conditions
+name == "..."
+name[name == "..."]
+name[name == "..."][]
+
+***multiple conditional selections***
+name[() & ()]
+len(name[() & ()])
+name[() | ()]
+len(name[() | ()])
+
+***returing specific column***
+name[][...]
+
+
+_____________________________
+    PANDAS_LIBRARY_2.IPYNB
+_____________________________
+
+***inplace = True***
+inplace = True - one of the often met parameters that make the change permanent
+
+***setting one of the columns as index***
+name.set_index()
+
+***resetting index***
+name.reset_index()
+
+***drop  column***
+name.drop()
+
+***fixing incomplete data***
+**1. dropping null data in rows and columns**
+name.dropna()
+**2. replacing null data with other data**
+name.fillna()
+
+***DataFrame groupby*** - getting column's location in memory
+name.groupby()
+
+***getting all the items, or if numeric - sums 
+that are met in the elements of the chosen column***
+name.groupby().sum()
+
+***getting the mean value of other items that are met in
+the items of the particular column***
+name.groupby().mean()
+
+
+***getting the max value of other items that are met in
+the items of the particular column***
+name.groupby().max()
+
+***getting the min value of other items that are met in
+the items of the particular column***
+name.groupby().min()
+
+
+***getting the standard deviation value of other items that are met in
+the items of the particular column***
+name.groupby().std()
+
+
+***getting the variance of other items that are met in
+the items of the particular column***
+name.groupby().var()
+
+***getting the amount of other items that are met in
+the items of the particular column***
+name.groupby().count()
+
+***counting unique data in a column***
+name[].unique
+
+***applying functions to DataFrames***
+def ...: ....
+name[].apply(...)
+
+***using lambda*** - creating a small and anonymous function 
+(a function without a name)
+name[].apply(lambda ...: ...)
+
+***applying functions to multiple columns***
+name[[]].apply(...)
+
+***sorting and ordering data in columns***
+name.sort_values()
