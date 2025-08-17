@@ -1,0 +1,43 @@
+***scikit-learn library*** - covers all the necessary stuff for creatin a module:
+data preprocessing(train & test splitting, normalization, etc.), different and
+classical ML modules (Linear regression, Logistic Regression, Random Forests and etc), 
+model evaluation(metrics), clustering and so on
+
+***from sklearn.model_selction import train_test_split*** - for splitting up the data
+into the training part (generally 80%) and testing part (generally 20%)
+X_train, X_test, y_train, y_test = train_test_split()
+
+***feature scaling*** - converting numerical values into the same exact scale
+**from sklearn.preprocessing import StandardScaler** - standardization
+scaleStandard = StandardScaler()
+scaleStandard.fit_transform()
+**from sklearn.preprocessing import MixMaxScaler** - normalization
+scaleMinMax = MinMaxScaler()
+scaleMinMax.fit_transform()
+
+***one hot encoder*** - converts categorical values into a numeric format
+**from sklearn.preprocessing import OneHotEncoder** 
+ohe = OneHotEncoder()
+ohe.fit_transform()
+
+***ordinal encoder*** - works with categorical data as well, assigns each category
+an integer value
+**from sklearn.preprocessing import Ordinal Encoder**
+enc = OrdinalEncoder()
+enc.fit_trasform()
+
+***handling missing data***
+**showing which row contains NaN**
+name.isna()
+**sum of the NaN values**
+name.isna().sum()
+
+***from sklearn.impute import SimpleImputer*** - replacing NaN values with specific 
+data
+SimpleImputer(strategy = '...')
+
+***simplifying data preprocessing with column transformer***
+**from sklearn.compose import make_column_transformer** - helper function that 
+lets you apply different preprocesing steps to different columns in your 
+dataset
+make_column_transformer()
