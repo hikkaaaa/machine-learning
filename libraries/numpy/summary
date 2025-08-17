@@ -1,0 +1,33 @@
+***import numpy as np*** - importing numpy library - allows us to create numpy arrays
+(arrays that can contain values of only one datatype)
+np.array([...])
+
+***math methods***
+name.shape
+name.arange()
+name.zeros()
+np.full()
+np.full()
+
+***converting python lists to numpy arrays***
+np.array(list)
+
+***slicing numpy arrays***
+name[start:end:steps]
+
+***slicing 2d numpy arrays***
+name[start:end:step, start:end:step]
+
+***numpy universal function***
+np.sqrt()
+np.absolute()
+np.exp()
+np.max()
+np.min()
+np.sign(
+np.sin()
+np.log()
+
+***copy and view of the numpy array***
+name.view()
+name.
