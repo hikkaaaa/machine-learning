@@ -43,3 +43,6 @@ heart_disease_app/
 │   └── style.css
 ├── requirements.txt
 └── README.md
+
+
+the mdoel was trained in the google colab 
